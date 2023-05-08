@@ -6,7 +6,7 @@ pipeline {
 	stages {
 		stage('Deploy') {
 			steps {
-				sh('ncftpput -R -v -u ${FTP_CREDS_USR} -p ${FTP_CREDS_PSW} ftp.danieloxenhandler.com /public_html/danox/static-website content/*')
+				sh('ncftpput -R -v -u ${FTP_CREDS_USR} -p ${FTP_CREDS_PSW} ftp.danieloxenhandler.com /public_html/danox content/*')
 			}
 		}
 	}
